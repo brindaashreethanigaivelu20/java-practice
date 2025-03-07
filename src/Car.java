@@ -1,7 +1,5 @@
-public class Car {
-    int numberOfWheels = 4;
-    int numberOfGears = 6;
-
+public class car {
+    String color ="blue";
     public void start() {
         System.out.println("Car is starting...");
     }
@@ -29,11 +27,16 @@ public class Car {
     public void turnOffHeadlights() {
         System.out.println("Headlights are OFF...");
     }
+    public void color() {
+        System.out.println("color is" + color);
+    }
+    }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         System.out.println("I am a car!");
 
-        Car car = new Car();
+        car car = new car();
+        car.color();
         car.start();
         car.changeGear(1);
         car.accelerate();
@@ -46,4 +49,4 @@ public class Car {
         car.stop();
         car.turnOffHeadlights();
     }
-}
+
